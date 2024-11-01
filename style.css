@@ -1,0 +1,134 @@
+/* Import fonts and set base styles */
+body {
+    font-family: 'Merriweather', serif;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    overflow: hidden; /* Assure que le contenu dépasse pas la bannière */
+    height: 300px; /* Définir une hauteur fixe pour la bannière */
+}
+
+header img {
+    width: 100%; /* La largeur reste à 100% */
+    height: auto; /* La hauteur est automatique pour éviter la déformation */
+    max-height: 300px; /* Limite la hauteur de l'image */
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Centre parfaitement */
+    color: white; /* Couleur du texte */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre pour lisibilité */
+    text-align: center; /* Centre le texte */
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8em; /* Taille ajustée pour la bannière */
+    margin: 0;
+}
+
+p {
+    font-size: 1.5em; /* Taille ajustée pour la phrase */
+    margin: 10px 0 0; /* Espacement entre le titre et la phrase */
+}
+
+nav {
+    background-color: #3b3b3b;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fdfdfd;
+    font-size: 1.1em;
+    padding: 10px 15px; /* Ajoute du padding pour les boutons */
+    background-color: rgba(255, 255, 255, 0.2); /* Ajoute un fond transparent */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Change le fond au survol */
+}
+
+section {
+    padding: 30px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.room-cards, .amenity-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 280px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 10px 0;
+}
+
+.card p {
+    padding: 10px 15px;
+    font-size: 0.95em;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    background-color: #3b3b3b;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    font-size: 0.9em;
+}
+
+.footer-content a {
+    color: #f5c5a8;
+    text-decoration: underline;
+}
